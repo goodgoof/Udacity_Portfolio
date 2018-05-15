@@ -1,0 +1,95 @@
+* {
+  font-family: Garamond;
+  background-color: #222930; }
+
+.top-nav {
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  background-color: #222930; }
+
+ul.my_name {
+  float: right; }
+
+ul.desktop, ul.mobile {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  color: #e9e9e9; }
+
+ul.list {
+  color: #e9e9e9;
+  text-decoration-line: none; }
+
+.list a {
+  color: #e9e9e9;
+  text-decoration-line: none;
+  padding: 20px;
+  font-size: 20px; }
+
+ul.mobile {
+  justify-content: space-between; }
+
+.my_name {
+  font-size: 35px;
+  color: #4eb1ba;
+  padding-right: 40px;
+  padding-left: 20px;
+  text-align: right;
+  font-weight: 100; }
+
+.search {
+  padding: 5px;
+  border-radius: 5px; }
+
+hr {
+  background-color: #4eb1ba;
+  height: 2px; }
+
+ul.mobile a {
+  color: #e9e9e9; }
+
+.jumbotron {
+  max-width: 100%;
+  height: 400px;
+  background-image: url("./images/hero_image.jpg");
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0; }
+
+footer.social_media {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  color: #4eb1ba;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.fab a {
+  color: #e9e9e9; }
+
+@media screen and (max-width: 450px) {
+  ul.desktop {
+    display: none; }
+
+  .my_name {
+    font-size: 35px;
+    padding-right: 36px; }
+
+  .search {
+    padding: 6px;
+    margin-left: 15px; }
+   }
+@media screen and (min-width: 451px) {
+  ul.mobile {
+    display: none; }
+
+  .jumbotron {
+    max-width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

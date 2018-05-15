@@ -1,0 +1,256 @@
+$primary-color: #222930;
+$white: #e9e9e9;
+$aquablue: #4eb1ba;
+
+body {
+  font-family : Garamond;
+  background-color:#222930;
+}
+
+.logo {
+  float: left;
+  text-align: left;
+  background-color:$primary-color;
+}
+
+.top-nav {
+  left: 0;
+  right:0;
+  top: 0;
+  position: fixed;
+  background-color: $primary-color;
+  // height: 84px;
+}
+nav {
+  .my_name {
+      font-size: 35px;
+      color: $aquablue;
+      padding-right: 40px;
+      padding-left: 20px;
+      text-align: right;
+      font-weight:100;
+      float: right;
+  }
+
+  .mobile {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      justify-content: space-between;
+  }
+
+  .desktop {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+
+  }
+
+  .list a {
+      color: $white;
+      text-decoration-line: none;
+      padding: 20px;
+      font-size: 20px;
+  }
+
+  .search {
+      padding: 5px;
+      border-radius: 5px;
+  }
+
+  ul.mobile a {
+      color: $white;
+  }
+
+}
+
+
+hr {
+    background-color: $aquablue;
+    height: 2px;
+}
+
+
+.jumbotron {
+    max-width: 100%;
+    height: 400px;
+    background-image: url("./images/hero_image.jpg");
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // margin-right: -15px;
+    margin: 0;
+
+}
+
+
+
+.fab a{
+  color: $white;
+}
+
+.title {
+  text-align: center;
+  color: $white;
+}
+//styling for Projects
+
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  color: $white;
+
+
+
+  a {
+      color: $white;
+    }
+}
+
+img {
+  width: 100%;
+}
+.proj {
+  height: auto;
+  box-shadow: 0 2px 80px 0 rgba(0, 0, 0, 0.8);
+  margin: 50px 15px;
+  box-sizing: border-box;
+}
+
+p.details {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+//styles for footer
+
+footer {
+    bottom: 0;
+    width: 100%;
+    // height: 100px;
+    position:relative;
+    color: $aquablue;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    left: 0;
+    right: 0;
+
+}
+
+
+footer.social_media {
+    bottom: 0;
+    width: 100%;
+    // height: 100px;
+    position: absolute;
+    color: $aquablue;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+
+}
+
+i.fa-github, i.fa-twitter  {
+  color: $aquablue;
+  margin: 5px;
+
+}
+// media queries for mobile
+
+@media screen and (max-width: 450px) {
+  ul.desktop {
+    display: none;
+  }
+  .my_name {
+    font-size: 26px;
+    padding: 4px;
+    margin-left: 3px;
+  }
+  .search {
+    padding: 6px;
+    margin-left: 3px;
+  }
+  .projects {
+    grid-template-columns: .7fr .7fr;
+    margin: 15px;
+  }
+
+}
+
+
+
+// media queries for desktop
+
+@media screen and (min-width: 451px) and (max-width:768px) {
+  ul.mobile {
+    display: none;
+  }
+  .jumbotron {
+    max-width: 100%;
+    height: 500px;
+  }
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+   nav .list a, .my_name{
+    font-size: 35px;
+  }
+  ul.mobile {
+    display: none;
+  }
+  .jumbotron {
+    max-width: 100%;
+    height: 800px;
+  }
+  .projects {
+    grid-template-columns: 1fr 1fr ;
+  }
+  p.details {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+   nav .list a, .my_name{
+    font-size: 35px;
+  }
+
+  p.details {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  a.details {
+    text-decoration: none;
+
+
+  }
+  .projects {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul.mobile {
+    display: none;
+  }
+
+  .jumbotron {
+    max-width: 100%;
+    height: 800px;
+  }
+  .projects {
+    grid-template-columns: .7fr .7fr .7fr .7fr;
+  }
+}
