@@ -88,34 +88,28 @@ hr {
 
 }
 
-
-
-.fab a{
-  color: $white;
-}
-
 .title {
   text-align: center;
   color: $white;
 }
-//styling for Projects
 
+//styling for Projects
 
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr ;
   color: $white;
 
-
-
   a {
       color: $white;
+      text-decoration: none;
+    }
+
+  img {
+      width: 100%;
     }
 }
 
-img {
-  width: 100%;
-}
 .proj {
   height: auto;
   box-shadow: 0 2px 80px 0 rgba(0, 0, 0, 0.8);
@@ -146,7 +140,6 @@ footer {
 
 }
 
-
 footer.social_media {
     bottom: 0;
     width: 100%;
@@ -170,9 +163,9 @@ i.fa-github, i.fa-twitter  {
   ul.desktop {
     display: none;
   }
-  .my_name {
-    font-size: 26px;
-    padding: 4px;
+  .mobile.my_name {
+    font-size: 22px;
+    padding: 2px;
     margin-left: 3px;
   }
   .search {
@@ -186,9 +179,7 @@ i.fa-github, i.fa-twitter  {
 
 }
 
-
-
-// media queries for desktop
+// media queries for desktop and tablet
 
 @media screen and (min-width: 451px) and (max-width:768px) {
   ul.mobile {
@@ -232,11 +223,6 @@ i.fa-github, i.fa-twitter  {
     font-size: 25px;
   }
 
-  a.details {
-    text-decoration: none;
-
-
-  }
   .projects {
     width: 70%;
     text-align: center;
