@@ -153,7 +153,7 @@ i.fa-github, i.fa-twitter {
     height: 500px; }
 
   .projects {
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: .5fr .5fr; } }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   nav .list a {
     font-size: 35px; }
@@ -170,7 +170,7 @@ i.fa-github, i.fa-twitter {
     height: 800px; }
 
   .projects {
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: .5fr .5fr .5fr; }
 
   p.details {
     font-size: 25px; } }
@@ -196,6 +196,6 @@ i.fa-github, i.fa-twitter {
     height: 800px; }
 
   .projects {
-    grid-template-columns: .7fr .7fr .7fr .7fr; } }
+    grid-template-columns: .5fr .5fr .5fr .5fr; } }
 
 /*# sourceMappingURL=style.min.css.map */
