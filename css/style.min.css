@@ -1,18 +1,18 @@
 body {
   font-family: Garamond;
-  background-color: #222930; }
+  background-color: #362c66; }
 
 .logo {
   float: left;
   text-align: left;
-  background-color: #222930; }
+  background-color: #362c66; }
 
 .top-nav {
   left: 0;
   right: 0;
   top: 0;
   position: fixed;
-  background-color: #222930; }
+  background-color: #362c66; }
 
 nav .my_name {
   font-size: 35px;
@@ -22,34 +22,25 @@ nav .my_name {
   text-align: right;
   font-weight: 100;
   float: right; }
-nav .mobile {
+nav .desktop {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   align-items: center;
   justify-content: center;
-  color: #e9e9e9;
-  justify-content: space-between; }
-nav .desktop {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  justify-content: center;
-  color: #e9e9e9; }
+  color: #c9d399;
+  padding: 0; }
 nav .list a {
-  color: #e9e9e9;
+  color: #c9d399;
   text-decoration-line: none;
   padding: 20px;
   font-size: 20px; }
-nav .search {
-  padding: 5px;
-  border-radius: 5px; }
 nav ul.mobile a {
-  color: #e9e9e9; }
+  color: #c9d399; }
 
 hr {
-  background-color: #4eb1ba;
-  height: 2px; }
+  background-color: #c9d399;
+  height: 1px; }
 
 .jumbotron {
   max-width: 100%;
@@ -64,28 +55,32 @@ hr {
 
 .title {
   text-align: center;
-  color: #e9e9e9; }
+  color: #c9d399; }
 
 .projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: #e9e9e9; }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #c9d399; }
   .projects a {
-    color: #e9e9e9;
+    color: #c9d399;
     text-decoration: none; }
   .projects img {
     width: 100%; }
 
 .proj {
+  width: 100%;
   height: auto;
-  box-shadow: 0 2px 80px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 80px 0 rgba(0, 0, 0, 0.5);
   margin: 50px 15px;
   box-sizing: border-box; }
 
 p.details {
-  width: inherit;
-  height: 100px;
-  padding: 10px; }
+  max-width: 100%;
+  height: auto;
+  padding: 2px;
+  text-align: center; }
 
 footer {
   bottom: 0;
@@ -114,26 +109,26 @@ i.fa-github, i.fa-twitter {
   body {
     overflow-x: hidden !important; }
 
-  ul.desktop {
-    display: none; }
+  .desktop {
+    flex-direction: column; }
+
+  .desktop li {
+    margin-top: 20px; }
+
+  li.logo {
+    margin-top: -20px; }
+
+  .jumbotron {
+    margin-top: 230px; }
 
   li.my_name {
-    font-size: 15px;
-    padding: 2px;
-    margin-left: 3px;
-    margin-right: 15px; }
-
-  .search {
-    padding: 6px;
-    margin-left: 3px; }
+    font-size: 35px;
+    padding: 2px; }
 
   .projects {
-    grid-template-columns: .7fr .7fr;
-    margin: 15px; } }
+    margin: 15px;
+    flex-direction: column; } }
 @media screen and (min-width: 451px) and (max-width: 768px) {
-  ul.mobile {
-    display: none; }
-
   ul.desktop {
     padding: 0;
     margin-left: auto;
@@ -153,7 +148,11 @@ i.fa-github, i.fa-twitter {
     height: 500px; }
 
   .projects {
-    grid-template-columns: .5fr .5fr; } }
+    flex-wrap: wrap; }
+
+  .proj {
+    width: 25%;
+    height: auto; } }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   nav .list a {
     font-size: 35px; }
@@ -162,40 +161,33 @@ i.fa-github, i.fa-twitter {
     font-size: 35px;
     padding-right: 5px; }
 
-  ul.mobile {
-    display: none; }
-
   .jumbotron {
     max-width: 100%;
     height: 800px; }
 
-  .projects {
-    grid-template-columns: .5fr .5fr .5fr; }
-
   p.details {
-    font-size: 25px; } }
+    font-size: 17px; }
+
+  .projects {
+    text-align: center;
+    margin: 0 5%;
+    flex-wrap: nowrap; } }
 @media screen and (min-width: 1025px) {
   nav .list a, .my_name {
     font-size: 35px; }
 
   p.details {
-    width: inherit;
+    width: 100%;
     height: inherit;
     font-size: 25px; }
 
   .projects {
-    width: 70%;
     text-align: center;
-    margin: 0 auto; }
-
-  ul.mobile {
-    display: none; }
+    margin: 0 5%;
+    flex-wrap: nowrap; }
 
   .jumbotron {
     max-width: 100%;
-    height: 800px; }
-
-  .projects {
-    grid-template-columns: .5fr .5fr .5fr .5fr; } }
+    height: 800px; } }
 
 /*# sourceMappingURL=style.min.css.map */
