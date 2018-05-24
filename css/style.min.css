@@ -101,9 +101,10 @@ footer.social_media {
   display: flex;
   justify-content: center; }
 
-i.fa-github, i.fa-twitter {
+a.fa-github, a.fa-twitter {
   color: #4eb1ba;
-  margin: 5px; }
+  margin: 5px;
+  text-decoration: none; }
 
 @media screen and (max-width: 450px) {
   body {
@@ -116,7 +117,7 @@ i.fa-github, i.fa-twitter {
     margin-top: 20px; }
 
   li.logo {
-    margin-top: -20px; }
+    margin-top: -10px; }
 
   .jumbotron {
     margin-top: 230px; }

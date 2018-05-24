@@ -147,9 +147,10 @@ footer.social_media {
 
 }
 
-i.fa-github, i.fa-twitter  {
+a.fa-github, a.fa-twitter  {
   color: $aquablue;
   margin: 5px;
+  text-decoration: none;
 
 }
 // media queries for mobile
@@ -169,7 +170,7 @@ i.fa-github, i.fa-twitter  {
   }
 
      li.logo {
-       margin-top: -20px;
+       margin-top: -10px;
   }
 
   .jumbotron {
